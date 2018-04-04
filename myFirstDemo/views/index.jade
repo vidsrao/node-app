@@ -5,4 +5,19 @@ block content
 		.row
 			.col-md-12
 				h1= title
-				p Welcome to #{title}    			
+				p Welcome to #{title}
+				// USER LIST
+		.row
+			.col-md-12				
+									
+				h2 User List
+				#userList
+					table.table.table-striped
+						thead
+							th UserName
+							th Email
+							th Delete?
+						tbody
+				include user-info.jade
+				// ADD USER				
+				include adduser.jade						
